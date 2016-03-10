@@ -42,5 +42,8 @@
     "grunt": "~0.4.5",
     "node-sass": "~3.3.3"
   },
+  "scripts": {
+       "start": "node index.js"
+   },
   "license": "MIT"
 }
