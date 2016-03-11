@@ -21,6 +21,8 @@ body {
   font-family: "LubalinBookforIBM"
 }
 
+ul {}
+
 .reveal {
 /*  font-family: "Source Sans Pro", Helvetica, sans-serif;*/
   font-size: 38px;
@@ -47,7 +49,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #222;
+  color: #EE820F;
 /*  font-family: "Source Sans Pro", Helvetica, sans-serif;*/
   font-weight: 600;
   line-height: 1.2;
@@ -77,6 +79,13 @@ body {
 .reveal p {
   margin: 20px 0;
   line-height: 1.3; }
+
+.small-paragraph {
+    line-height: 1 
+        em !important;
+    font-size: medium !important;
+    margin: -20px 0px 0kkpx 0px !important;
+}
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
