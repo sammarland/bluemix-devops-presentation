@@ -308,12 +308,12 @@ ul {}
 
 #ix-logo {
     position: absolute;
-    left: 20px;
+    left: 200px;
     bottom: 20px;
 }
 
 #exc-logo {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 200px;
+    bottom: 21px;
 }
