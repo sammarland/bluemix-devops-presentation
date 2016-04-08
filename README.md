@@ -6,4 +6,4 @@ It's written in Reveal.js and can be run by using
 
     node index.js
     
-
+We now have slack integration
