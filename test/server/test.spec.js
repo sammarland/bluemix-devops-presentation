@@ -3,7 +3,9 @@
 var expect = require('chai').expect;
 var request = require('request');
 
-var url = 'http://bluemix-devops-presentation.eu-gb.mybluemix.net'
+var url = 'http://bluemix-devops-presentation.eu-gb.mybluemix.net';
+//var url = 'http://localhost:8000';
+
 describe('GET /home', function() {
     it('expect website to be up ie 200', function(done) {
         request.get(url, function (err, data) {
@@ -36,6 +38,18 @@ describe('GET /some-non-existant-route', function() {
             if (err) return done(err);
             //console.log(data.headers);
             expect(data.statusCode).to.equal(404);
+            done();
+        })
+    });
+});
+
+describe('GET /#/9', function() {
+    it('expect website to contain newly added emails', function(done) {
+        request.get(url+'/#/9', function (err, data) {
+            if (err) return done(err);
+            //console.log(data.headers);
+            expect(data.body).to.contain('sam@uk.ibm.com');
+            expect(data.body).to.contain('donal@uk.ibm.com');
             done();
         })
     });
