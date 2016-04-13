@@ -4,3 +4,4 @@ bower_components
 test/TEST-REPORT.xml
 bluemix-devops-presentation.zip
 dist*
+js/reveal.min.js
