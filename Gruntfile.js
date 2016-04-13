@@ -17,10 +17,6 @@ module.exports = function(grunt) {
 				' */'
 		},
 
-		qunit: {
-			files: [ 'test/*.html' ]
-		},
-
 		uglify: {
 			options: {
 				banner: '<%= meta.banner %>\n'
@@ -36,17 +32,6 @@ module.exports = function(grunt) {
 				files: {
 					'css/reveal.css': 'css/reveal.scss',
 				}
-			},
-			themes: {
-				files: [
-					{
-						expand: true,
-						cwd: 'css/theme/source',
-						src: ['*.scss'],
-						dest: 'css/theme',
-						ext: '.css'
-					}
-				]
 			}
 		},
 
@@ -101,14 +86,18 @@ module.exports = function(grunt) {
 		},
 
 		zip: {
-			'reveal-js-presentation.zip': [
+			'dist.zip': [
 				'index.html',
 				'css/**',
 				'js/**',
 				'lib/**',
 				'images/**',
 				'plugin/**',
-				'**.md'
+				'**.md',
+				'bower.json',
+				'package.json',
+				'index.js',
+				'Gruntfile.js'
 			]
 		},
 
@@ -139,7 +128,6 @@ module.exports = function(grunt) {
 	});
 
 	// Dependencies
-	grunt.loadNpmTasks( 'grunt-contrib-qunit' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
@@ -153,7 +141,7 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
 
 	// JS task
-	grunt.registerTask( 'js', [ 'jshint', 'uglify', 'qunit' ] );
+	grunt.registerTask( 'js', [ 'jshint', 'uglify' ] );
 
 	// Theme CSS
 	grunt.registerTask( 'css-themes', [ 'sass:themes' ] );
@@ -171,6 +159,6 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
 
 	// Run tests
-	grunt.registerTask( 'test', [ 'jshint', 'qunit' ] );
+	grunt.registerTask( 'test', [ 'jshint' ] );
 
 };

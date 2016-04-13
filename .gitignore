@@ -2,3 +2,5 @@ node_modules/**
 .idea
 bower_components
 test/TEST-REPORT.xml
+bluemix-devops-presentation.zip
+dist*
