@@ -103,7 +103,8 @@ module.exports = function(grunt) {
 							'bower.json',
 							'package.json',
 							'index.js',
-							'Gruntfile.js'
+							'Gruntfile.js',
+							'test'
 						]
 					}
 				]
