@@ -41,11 +41,11 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 /* @group Blink */
 
 .blink {
-	-webkit-animation: blink .75s linear infinite;
-	-moz-animation: blink .75s linear infinite;
-	-ms-animation: blink .75s linear infinite;
-	-o-animation: blink .75s linear infinite;
-	animation: blink .75s linear infinite;
+	-webkit-animation: blink 1.25s linear infinite;
+	-moz-animation: blink 1.25s linear infinite;
+	-ms-animation: blink 1.25s linear infinite;
+	-o-animation: blink 1.25s linear infinite;
+	animation: blink 1.25s linear infinite;
 }
 
 @-webkit-keyframes blink {
@@ -1420,5 +1420,3 @@ html:-moz-full-screen-ancestor {
 .zoomed .reveal .roll span:after {
 	visibility: hidden;
 }
-
-
