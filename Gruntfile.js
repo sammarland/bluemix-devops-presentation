@@ -104,7 +104,7 @@ module.exports = function(grunt) {
 							'package.json',
 							'index.js',
 							'Gruntfile.js',
-							'test'
+							'test/**'
 						]
 					}
 				]
