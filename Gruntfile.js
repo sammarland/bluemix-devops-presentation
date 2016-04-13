@@ -84,22 +84,47 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-
-		zip: {
-			'dist.zip': [
-				'index.html',
-				'css/**',
-				'js/**',
-				'lib/**',
-				'images/**',
-				'plugin/**',
-				'**.md',
-				'bower.json',
-				'package.json',
-				'index.js',
-				'Gruntfile.js'
-			]
+		copy: {
+			dist: {
+				files: [
+					{
+						expand: true,
+						dot: true,
+						cwd: './',
+						dest: 'dist',
+						src: [
+							'index.html',
+							'css/**',
+							'js/**',
+							'lib/**',
+							'images/**',
+							'plugin/**',
+							'**.md',
+							'bower.json',
+							'package.json',
+							'index.js',
+							'Gruntfile.js'
+						]
+					}
+				]
+			}
 		},
+
+		//zip: {
+		//	'dist': [
+		//		'index.html',
+		//		'css/**',
+		//		'js/**',
+		//		'lib/**',
+		//		'images/**',
+		//		'plugin/**',
+		//		'**.md',
+		//		'bower.json',
+		//		'package.json',
+		//		'index.js',
+		//		'Gruntfile.js'
+		//	]
+		//},
 
 		watch: {
 			options: {
@@ -135,9 +160,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-autoprefixer' );
-	grunt.loadNpmTasks( 'grunt-zip' );
+	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 
-	// Default task
+
+		// Default task
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
 
 	// JS task
@@ -153,7 +179,7 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'css', [ 'sass', 'autoprefixer', 'cssmin' ] );
 
 	// Package presentation to archive
-	grunt.registerTask( 'package', [ 'default', 'zip' ] );
+	grunt.registerTask( 'package', [ 'default', 'copy:dist' ] );
 
 	// Serve presentation locally
 	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
