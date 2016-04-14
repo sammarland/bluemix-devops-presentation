@@ -98,6 +98,7 @@ module.exports = function(grunt) {
 							'js/**',
 							'lib/**',
 							'images/**',
+							'video/**',
 							'plugin/**',
 							'**.md',
 							'bower.json',
