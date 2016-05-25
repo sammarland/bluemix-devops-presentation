@@ -8,5 +8,9 @@ WORKDIR devops-site
 
 RUN npm install --production
 
+ENV NODE_ENV prod
+
+EXPOSE 5000
+
 CMD node index.js
 
