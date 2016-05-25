@@ -151,6 +151,9 @@
                                 <p>RUN npm install --production</p>
                             </div>
                             <div class="fragment">
+                                <p>ENV NODE_ENV production</p>
+                            </div>
+                            <div class="fragment">
                                 <p>CMD node index.js</p>
                             </div>
                         </code>
@@ -158,9 +161,9 @@
 
                     <section>
                         <h2>Images or Containers</h2>
+                        <p class="fragment">The docker registry hosts images and sample Dockerfile</p>
                         <p class="fragment"><code>docker build -t node-app .</code></p>
                         <p class="fragment"><code>docker run -d -p 8080:5000 --name my-node-container node-app</code></p>
-                        <p class="fragment">The docker registry hosts images and sample Dockerfile</p>
                     </section>
 
 
@@ -169,8 +172,7 @@
                         <p class="fragment">Manage cluster of containers</p>
                         <div class="fragment">
                             <p>Kubernetes</p>
-                            <p class="small-paragraph">Vertical scaling</p>
-                            <p class="small-paragraph">automatic rollover</p>
+                            <p class="small-paragraph">Vertical scaling || automatic rollover</p>
                         </div>
                         <div class="fragment">
                             <p>Docker swarm</p>
@@ -180,15 +182,14 @@
 
                     <section>
                         <h2>Docker Vs Vagrant</h2>
-                        <p class="fragment"></p>
-                        <p class="fragment">VMs in the cloud</p>
+                        <p class="fragment">Full VMs</p>
                         <div class="fragment">
-                            <p>Containers</p>
-                            <p class="small-paragraph">(Docker)</p>
+                            <p></p>
+                            <p class="small-paragraph"></p>
                         </div>
                         <div class="fragment">
-                            <p>Access to services</p>
-                            <p class="small-paragraph">(Databases, Analytics, Security, etc)</p>
+                            <p></p>
+                            <p class="small-paragraph"></p>
                         </div>
                     </section>
                 </section>
