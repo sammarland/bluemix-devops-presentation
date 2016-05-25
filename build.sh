@@ -7,3 +7,5 @@ grunt package
 cp Dockerfile dist 
 cd dist
 
+$$$$$$$$$$$$$$$$$$
+
