@@ -116,6 +116,82 @@
 
 				</section>
 
+                <!-- Docker Vertical-->
+                <section>
+                    <section>
+                        <h2>What is Docker?</h2>
+                        <p class="fragment">Linux Container</p>
+                        <p class="fragment">Light weight, shippable & scalable</p>
+                        <div class="fragment">
+                            <p>Package all the things!</p>
+                            <p class="small-paragraph">(code, runtime, system tools, system libraries)</p>
+                        </div>
+                        <div class="fragment">
+                            <p>Caching and layers</p>
+                            <p class="small-paragraph">(security)</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>an expample Dockerfile</h2>
+                        <code style="text-align: left" data-trim>
+                            <div class="fragment">
+                                <p>FROM node:4.4</p>
+                            </div>
+                            <div class="fragment">
+                                <p>RUN mkdir -p devops-site</p>
+                            </div>
+                            <div class="fragment">
+                                <p>COPY dist devops-site/</p>
+                            </div>
+                            <div class="fragment">
+                                <p>WORKDIR devops-site</p>
+                            </div>
+                            <div class="fragment">
+                                <p>RUN npm install --production</p>
+                            </div>
+                            <div class="fragment">
+                                <p>CMD node index.js</p>
+                            </div>
+                        </code>
+                    </section>
+
+                    <section>
+                        <h2>Images or Containers</h2>
+                        <p class="fragment"><code>docker build -t node-app .</code></p>
+                        <p class="fragment"><code>docker run -d -p 8080:5000 --name my-node-container node-app</code></p>
+                        <p class="fragment">The docker registry hosts images and sample Dockerfile</p>
+                    </section>
+
+
+                    <section>
+                        <h2>Kubernetes Vs Docker Swarm</h2>
+                        <p class="fragment">Manage cluster of containers</p>
+                        <div class="fragment">
+                            <p>Kubernetes</p>
+                            <p class="small-paragraph">Vertical scaling</p>
+                            <p class="small-paragraph">automatic rollover</p>
+                        </div>
+                        <div class="fragment">
+                            <p>Docker swarm</p>
+                            <p class="small-paragraph">Uses docker cli</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Docker Vs Vagrant</h2>
+                        <p class="fragment"></p>
+                        <p class="fragment">VMs in the cloud</p>
+                        <div class="fragment">
+                            <p>Containers</p>
+                            <p class="small-paragraph">(Docker)</p>
+                        </div>
+                        <div class="fragment">
+                            <p>Access to services</p>
+                            <p class="small-paragraph">(Databases, Analytics, Security, etc)</p>
+                        </div>
+                    </section>
+                </section>
                 <!-- DevOps Vertical -->
                 <section>
                     <section>
