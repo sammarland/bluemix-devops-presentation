@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var request = require('request');
 
-var url = 'http://bluemix-devops-presentation.eu-gb.mybluemix.net';
+var url = 'http://bluemix-devops-digital.eu-gb.mybluemix.net';
 //var url = 'http://localhost:8000';
 
 describe('GET /home', function() {
