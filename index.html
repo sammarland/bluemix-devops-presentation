@@ -52,7 +52,7 @@
                 <section>
                     <img src="images/sam.jpg" width="320px" height="213px" alt="Sam Marland potrait" />
 					<h2>Sam Marland</h2>
-                    <p> DevOps | Agile | Front end dev | Tech Lead </p>
+                    <p> DevOps | Tech Lead | Agile </p>
 				</section>
 
                 <section>
@@ -61,141 +61,26 @@
                     <p> Fullstack | Mobile | DevOps | Agile </p>
 				</section>
 
-                <!-- Bluemix Vertical-->
-                <section>
-					<section>
-                        <h2>What is Bluemix?</h2>
-                            <p class="fragment">Platform as a service</p>
-                            <p class="fragment">VMs in the cloud</p>
-                            <div class="fragment">
-                                <p>Containers</p>
-                                    <p class="small-paragraph">(Docker)</p>
-                            </div>
-                            <div class="fragment">
-                                <p>Access to services</p>
-                                    <p class="small-paragraph">(Databases, Analytics, Security, etc)</p>
-                            </div>
-                    </section>
 
-                    <section data-background="images/bluemix-compute.png">
-					</section>
-
-                    <section data-background="images/bluemix-watson.png">
-					</section>
-
-                    <section>
-                        <h2>Internet of Things</h2>
-                        <p class="small-paragraph">(NodeRED)</p>
-                        <img class="fragment" src="./images/bluemix-nodered.png" height="200px"/>
-                        <img class="fragment" src="./images/bluemix-nodered-tweet.png" height="200px"/>
-                    </section>
-
-                    <section>
-                        <h2>How can it help you?</h2>
-                        <p class="fragment">Free to start</p>
-                        <p class="fragment">Quick</p>
-                        <p class="fragment">Very flexible</p>
-                        <p class="fragment">Can scale</p>
-					</section>
-
-                    <section>
-                        <h2>As a dev; why use Bluemix?</h2>
-                        <p class="fragment">Easy to use & public facing</p>
-                        <p class="fragment">I don't want to have to worry about setting up infrastructure</p>
-                        <p class="fragment">Management console allows control users / access</p>
-                        <p class="fragment">Samples and templates to bootstrap dev</p>
-                        <p class="fragment">Services make my app extensible</p>
-                    </section>
-
-                    <section>
-                        <h2>Variants?</h2>
-                        <p class="fragment"><a href="https://console.eu-gb.bluemix.net">Bluemix Public</p>
-                        <p class="fragment"><a href="https://console.w3ibm.bluemix.net">Bluemix Dedicated</a></p>
-                        <p class="fragment">Bluemix Local</p>
-					</section>
-
-				</section>
-
-                <!-- Docker Vertical-->
+                <!-- Demo Stack -->
                 <section>
                     <section>
-                        <h2>What is Docker?</h2>
-                        <p class="fragment">Linux Container</p>
-                        <p class="fragment">Light weight, shippable & scalable</p>
-                        <div class="fragment">
-                            <p>Package all the things!</p>
-                            <p class="small-paragraph">(code, runtime, system tools, system libraries)</p>
-                        </div>
-                        <div class="fragment">
-                            <p>Caching and layers</p>
-                            <p class="small-paragraph">(security | root)</p>
-                        </div>
+                        <h2>Demo</h2>
+                        <p>This presentation is running on this laptop</p>
+                        <p>It's Reveal.js and Node</p>
                     </section>
 
                     <section>
-                        <h2>an expample Dockerfile</h2>
-                        <code style="text-align: left" data-trim>
-                            <div class="fragment">
-                                <p>FROM node:4.4</p>
-                            </div>
-                            <div class="fragment">
-                                <p>RUN mkdir -p devops-site</p>
-                            </div>
-                            <div class="fragment">
-                                <p>COPY dist devops-site/</p>
-                            </div>
-                            <div class="fragment">
-                                <p>WORKDIR devops-site</p>
-                            </div>
-                            <div class="fragment">
-                                <p>RUN npm install --production</p>
-                            </div>
-                            <div class="fragment">
-                                <p>ENV NODE_ENV production</p>
-                            </div>
-                            <div class="fragment">
-                                <p>EXPOSE 5000</p>
-                            </div>
-                            <div class="fragment">
-                                <p>CMD node index.js</p>
-                            </div>
-                        </code>
+                        <p>We're going to create an app on Bluemix and</p>
+                        <p>create a DevOps pipeline to <b>build</b>, <b>test</b> </p>
+                        <p>and <b>deploy</b> this app</p>
                     </section>
-
                     <section>
-                        <h2>Images or Containers</h2>
-                        <p class="fragment">The docker registry hosts images and sample Dockerfile</p>
-                        <p class="fragment"><code>docker build -t node-app .</code></p>
-                        <p class="fragment"><code>docker run -d -p 8080:5000 --name my-node-container node-app</code></p>
-                    </section>
-
-
-                    <section>
-                        <h2>Kubernetes Vs Docker Swarm</h2>
-                        <p class="fragment">Manage cluster of containers</p>
-                        <div class="fragment">
-                            <p>Kubernetes</p>
-                            <p class="small-paragraph">Vertical scaling || automatic rollover</p>
-                        </div>
-                        <div class="fragment">
-                            <p>Docker swarm</p>
-                            <p class="small-paragraph">Uses docker cli</p>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h2>Docker Vs Vagrant</h2>
-                        <p class="fragment">Full VMs</p>
-                        <div class="fragment">
-                            <p></p>
-                            <p class="small-paragraph"></p>
-                        </div>
-                        <div class="fragment">
-                            <p></p>
-                            <p class="small-paragraph"></p>
-                        </div>
+                        <p>All of this will happen when any developer pushes</p>
+                        <p>to the <b>master</b> branch</p>
                     </section>
                 </section>
+
                 <!-- DevOps Vertical -->
                 <section>
                     <section>
@@ -299,60 +184,8 @@
                     </section>
                 </section>
 
-                <!-- Demo Stack -->
-				<section>
-                    <section>
-                        <h2>Demo</h2>
-                        <p>This presentation is running on this laptop</p>
-                        <p>It's Reveal.js and Node</p>
-                    </section>
 
-                    <section>
-                        <p>We're going to create an app on Bluemix and</p>
-                        <p>create a DevOps pipeline to <b>build</b>, <b>test</b> </p>
-                        <p>and <b>deploy</b> this app</p>
-                    </section>
-                    <section>
-                        <p>All of this will happen when any developer pushes</p>
-                        <p>to the <b>master</b> branch</p>
-                    </section>
-				</section>
-
-                <!-- Success Story -->
-				<section>
-                    <section>
-                        <h2>Some other cool stuff we've done...</h2>
-                    </section>
-
-                    <section>
-                        <p>Dockerised <b>Adobe Experience Manager</b> and <b>Salesforce</b></p>
-                        <p>DevOps at <b>scale</b> across multiple teams and geographys</p>
-                        <p>DevOps Services & Bluemix at Vodafone</p>
-                    </section>
-
-                    <section>
-                        <h2>Homebase - UK Retailer</h2>
-                        <p>Inflexible</p>
-                        <p>Unmaintainable</p>
-                        <p>3 months to make a change</p>
-                    </section>
-
-                    <section>
-                        <p><b>7</b> different environments</p>
-                        <p><b>10,000+</b> builds</p>
-                        <p><b>1,000,000+</b> test</p>
-                        <p><b>100+</b> production deploys</p>
-                    </section>
-                    <section>
-                        <p>Code fix to production in 5 hours</p>
-                    </section>
-				</section>
                 <section>
-                    <section>
-                        <h2 class="blink" >! Shameless plug !</h2>
-                        <p>DevOps Technical Training Workshop</p>
-                        <p class="small-paragraph">(with Tim, Donal, Sam, Will)</p>
-                    </section>
                     <section>
                         <h2>Thank you and goodbye!</h2>
                         <!-- TO BE ADDED IN DEMO -->
