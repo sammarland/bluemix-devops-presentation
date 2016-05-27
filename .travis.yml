@@ -1,3 +1,8 @@
 language: node_js
 node_js:
-  - "4.1.1"
+- 4.1.1
+deploy:
+  provider: heroku
+  api_key:
+    secure: TyfYRRz10/4O4DqeVXQXFCoNjKdUuc7UdF56OdhjGNYSD7yjiG3iQnV3B03xmHQ8bPrO+fxpcs0fVdyk1M7nPTNcZv+t968QY/B9WJZbQKJqusOkL1rSyxYpeg9+oSC126X6RZdfZDLzJiPw91s2Zq6rFH6Rlk8WVDtp3rrKgDHv+DbyDy21nCZhDUUtsrpXNhpn0SbFaHzDOavzSJ0aDegzwWsM1fayPSZSW4lf5HfIjds2D+X4NG4U3QrBLnC1j9aGH1r+qMoZy3T+xYLmU+vORED5rQWIeQYZWW5cxmUGIG1TNKAjaOSjJEzoPJVGPWjr6x1+5jTjfPg1Ts5NYvrADfBmtxCEb0GhMH9Ccopoq9qVf9sn96ug1hsQDZO8dXDsmpeOtDP31daoi8frfq4irUAqsLqw2GtrJyGHIdA6ga4aq4MmekuXYY1kS38XNPrPMqvjBciWfeO+4ex4oIUkTahN8gAroHL0oYTRK6Q/qeXAM4P291uRfCSywPhiy0QaCubnCMph52EE/DxwCcA4jsQgdXxg1eKC1g6+i7BorjgCpl8AmTGL+o3vfSb/MffH3Hab5wHoIetF9SLiI54E4Nk85ISoqCYF7i6I7hUZgbQbqWe4ipmPs9RqnqdO/CdxksICGevZSLHVAQ+3ElT3L04dmKgjCnc4EIH3Ht4=
+  app:  derek-doxlon
