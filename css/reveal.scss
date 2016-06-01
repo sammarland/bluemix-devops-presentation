@@ -7,6 +7,11 @@
  */
 
 
+.top {
+	position: absolute;
+	z-index: 1;
+}
+
 /*********************************************
  * RESET STYLES
  *********************************************/
@@ -37,11 +42,6 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 	display: block;
 }
 
-.top {
-	position: absolute;
-	z-index: 1;
-	//height:90%;
-}
 
 /* @group Blink */
 
