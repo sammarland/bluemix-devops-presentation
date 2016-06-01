@@ -32,6 +32,10 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 .reveal footer, .reveal header, .reveal hgroup, .reveal menu, .reveal nav, .reveal section {
   display: block; }
 
+.top {
+  position: absolute;
+  z-index: 1; }
+
 /* @group Blink */
 .blink {
   -webkit-animation: blink 1.25s linear infinite;
