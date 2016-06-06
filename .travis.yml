@@ -5,7 +5,7 @@ deploy:
   provider: heroku
   api_key:
     secure: WAcYzMpbCR0J4pxdwy6VmlW95YgVbTYj6ywGkNYKiKHUc19jFkmTIe38JVZLXd7i701gYc79PMJI/12ZW2PsfRV2TGS8Ovi/WZljTw0DmqYbRTQKS7bTfS3xgsDmGigh/flcLwBDJ9I9KZgwCgFhhj/00LZbPMiJwCQdMmABfJR7ozodE0U+5XCruV1n4fwK5DBtWynRtdPsf47wYh/02wbnmDxn9SzB2v9Gx3+RSsvrNYPKn9pedzTDegv7QFaD8zIOy+es4XT3ga2BtmhYHhLAWgYrhw7MVFNTlgTcq6qik7p/DsHUtH+DKOBMxFu39zz37Q43KHofdWwy7X+sMnct5AQGjt+nhvIUSRCBX3k03zQW8LAZNlhW0I2KnVMrfgSrh0W5HoZ//lKizv1McQn7Ey1AmEXlAnP/M5FPO1aJ0NCENWAcSzER+U5uo+k2KL6PKJaBPLzhB93ParRs7Uk2TjVvAIt6h+DMpdf/zoENa8T3h23oEqdiH9/pBjWEISQoHgE8BcyrUALoVhDuXKKQ1EHqSL97vq0seuchGlSHo/c34liktCnzPkmb9WfP6uiKe8cfjMKy8SNfh6VnRU3DQQWUQsYsUvwLENVDyYDiDx4kJ9LuqkU/lhvN+gVbfG+XkfWC6dcaJvcyP3xBgD6+hz+g6CmALXa6szbcj/g=
-  app: derek-doxlon
+  app: devops-three
   on:
     repo: sammarland/bluemix-devops-presentation
-    branch: doxlon
+    branch: 3-mobile
