@@ -41,25 +41,45 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
                 <!-- Intro Slide-->
-				<section>
-					<h1>IBM Bluemix and DevOps Services</h1>
-					<p>
-						<small>Created by <a href="http://blog.marland.io">Sam Marland</a> / <a href="https://donalspring.herokuapp.com">Dónal Spring</a></small>
-					</p>
-				</section>
+                <section>
+                    <h1>DevOps: The Gaps & The Dinosaur</h1>
+                    <p>
+                        <small>Created by <a href="http://blog.marland.io">Sam Marland</a> / <a href="https://donalspring.herokuapp.com">Dónal Spring</a></small>
+                    </p>
+                </section>
 
                 <!-- Who are we ? -->
                 <section>
-                    <img src="images/sam.jpg" width="320px" height="213px" alt="Sam Marland potrait" />
-					<h2>Sam Marland</h2>
-                    <p> DevOps | Agile | Front end dev | Tech Lead </p>
-				</section>
+                    <section>
+                        <img src="images/sam.jpg" width="320px" height="213px" alt="Sam Marland potrait" />
+                        <h2>Sam Marland</h2>
+                        <p> DevOps | Tech Lead | Agile </p>
+                    </section>
 
+                    <section>
+                        <img src="images/donal.jpg" width="213px" height="213px" alt="Dónal Spring potrait" />
+                        <h2>Dónal Spring</h2>
+                        <p> Fullstack JS | DevOps | Agile </p>
+                    </section>
+                </section>
+                <!-- Demo Stack -->
                 <section>
-                    <img src="images/donal.jpg" width="213px" height="213px" alt="Dónal Spring potrait" />
-					<h2>Dónal Spring</h2>
-                    <p> Fullstack | Mobile | DevOps | Agile </p>
-				</section>
+                    <section>
+                        <h2>Demo</h2>
+                        <p>This presentation is running on this laptop</p>
+                        <p>It's Reveal.js and Node</p>
+                    </section>
+
+                    <section>
+                        <p>We're going to create an app on Bluemix and</p>
+                        <p>create a DevOps pipeline to <b>build</b>, <b>test</b> </p>
+                        <p>and <b>deploy</b> this app</p>
+                    </section>
+                    <section>
+                        <p>All of this will happen when any developer pushes</p>
+                        <p>to the <b>master</b> branch</p>
+                    </section>
+                </section>
 
                 <!-- Bluemix Vertical-->
                 <section>
@@ -115,6 +135,194 @@
 					</section>
 
 				</section>
+
+
+                <!-- DevOps Vertical -->
+                <section>
+                    <section>
+                        <h2>What is DevOps</h2>
+                        <p class="fragment">Bridges the Gaps</p>
+                        <p class="fragment small-paragraph">(Communication, Collaboration & Integration)</p>
+                        <p class="fragment">Build > Test > Deploy</p>
+                        <aside class="notes">
+                            Design > Build > Test  THEN  Test < Monitor < Deploy < Publish</p>
+                        </aside>
+
+                    </section>
+                    <section>
+                        <div style="height: 700px;">
+                            <div class="top">
+                                <img src="images/the-gaps/the-gaps-1.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/the-gaps/the-gaps-2.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/the-gaps/the-gaps-3.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/the-gaps/the-gaps-4.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/the-gaps/the-gaps-5.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/the-gaps/the-gaps-6.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/the-gaps/the-gaps-7.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/the-gaps/the-gaps-8.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/the-gaps/the-gaps-9.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/the-gaps/the-gaps-10.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>What DevOps is not?</h3>
+                        <div>
+                            <div class="image-row">
+                                <div class="fragment" style="float: left">
+                                    <img src="images/s-devops-one-man-band.jpg" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
+                                </div>
+                                <div class="fragment" style="float: left">
+                                    <img src="images/s-devops-tools.gif" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
+                                </div>
+                                <div class="fragment" style="float: left">
+                                    <img src="images/s-devops-servers.png" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
+                                </div>
+                            </div>
+                            <div class="image-row">
+                                <div class="fragment" style="float: left">
+                                    <img src="images/s-devops-only-once.jpg" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
+                                </div>
+                                <div class="fragment" style="float: left">
+                                    <img src="images/s-devops-root.jpg" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
+                                </div>
+                                <div class="fragment" style="float: left">
+                                    <img src="images/s-devops-silver-bullet2.gif" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section data-background="images/derek.jpeg">
+                        <h2>Meet Derek</h2>
+                    </section>
+                    <section>
+                        <div style="height: 700px;">
+                            <div class="top">
+                                <img src="images/the-gaps/the-gaps-1.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/devops-dino/derek-s1-a.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/devops-dino/derek-s1-b.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/devops-dino/derek-s1-c.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div style="height: 700px;">
+                            <div class="top">
+                                <img src="images/the-gaps/the-gaps-1.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/devops-dino/derek-s2-a.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/devops-dino/derek-s2-b.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/devops-dino/derek-s2-c.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div style="height: 700px;">
+                            <div class="top">
+                                <img src="images/the-gaps/the-gaps-1.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/devops-dino/derek-s3-a.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/devops-dino/derek-s3-b.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                            <div class="fragment top" >
+                                <img src="images/devops-dino/derek-s3-c.png" style="margin: 5px 10px 5px 10px"/>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div  >
+                            <img src="images/devops-dino/derek-s1-c.png" style="margin: 5px 10px 5px 10px"/>
+                        </div>
+                    </section>
+                    <section>
+                        <div >
+                            <img src="images/devops-dino/derek-s2-c.png" style="margin: 5px 10px 5px 10px"/>
+                        </div>
+                    </section>
+                    <section>
+                        <div  >
+                            <img src="images/devops-dino/derek-s3-c.png" style="margin: 5px 10px 5px 10px"/>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>DevOps on Bluemix </h2>
+                        <p class="fragment">Create pipelines quickly</p>
+                        <p class="fragment">Easily push code to Bluemix</p>
+                        <p class="fragment">Integration with GitHub, Slack and Saucelabs</p>
+                    </section>
+
+                    <section data-background="images/devops-pipeline.png">
+                    </section>
+
+                    <section>
+                        <h2>DevOps Philosophy</h2>
+                        <p>Failed Build over night</p>
+                        <p>Devs are competitive!</p>
+                        <img src="images/devops-missile.jpg" height="250px">
+                    </section>
+                    <section data-background="images/po-cowboy.png">
+                    </section>
+                    <section>
+                        <h2>Monitoring</h2>
+                        <p>Philips Hue Bulbs</p>
+                        <div class="image-row">
+                            <div style="float: left">
+                                <img src="images/monitoring-tizzle.png" width="300px">
+                            </div>
+                            <div style="float: left">
+                                <img src="images/monitoring-prod.png" width="300px">
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div style="float: left">
+                                <img src="images/monitoring-castrol.jpg" height="250px">
+                            </div>
+                        </div>
+
+                    </section>
+                    <section data-background-video="video/kennyLogginsLong.mp4" data-autoslide="35500" >
+
+                    </section>
+                    <section>
+                        <h2>Monitoring</h2>
+                        <img src="images/monitoring-slack.png"  height="575px">
+                    </section>
+                </section>
+
 
                 <!-- Docker Vertical-->
                 <section>
@@ -203,127 +411,6 @@
                         </div>
                     </section>
                 </section>
-                <!-- DevOps Vertical -->
-                <section>
-                    <section>
-                        <h2>What is DevOps</h2>
-                        <p class="fragment">Bridges the Gaps</p>
-                        <p class="fragment small-paragraph">(Communication, Collaboration & Integration)</p>
-                        <p class="fragment">Build > Test > Deploy</p>
-                        <aside class="notes">
-                            Design > Build > Test  THEN  Test < Monitor < Deploy < Publish</p>
-                        </aside>
-
-                    </section>
-                    <section>
-                        <h3>What DevOps is not?</h3>
-                        <!--
-                        Some of the things that DevOps is certainly NOT:
-                            A One-man-band
-                            Just about building servers
-                            About giving all developers root access
-                            A one time only activity that projects need to undertake
-                            Just about tooling
-                            A silver bullet!
-                        -->
-                        <div>
-                            <div class="image-row">
-                                <div class="fragment" style="float: left">
-                                    <img src="images/s-devops-one-man-band.jpg" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
-                                </div>
-                                <div class="fragment" style="float: left">
-                                    <img src="images/s-devops-tools.gif" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
-                                </div>
-                                <div class="fragment" style="float: left">
-                                    <img src="images/s-devops-servers.png" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
-                                </div>
-                            </div>
-                            <div class="image-row">
-                                <div class="fragment" style="float: left">
-                                    <img src="images/s-devops-only-once.jpg" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
-                                </div>
-                                <div class="fragment" style="float: left">
-                                    <img src="images/s-devops-root.jpg" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
-                                </div>
-                                <div class="fragment" style="float: left">
-                                    <img src="images/s-devops-silver-bullet2.gif" width="220px" height="220px" alt="One man band" style="margin: 5px 10px 5px 10px"/>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h2>What is a pipeline</h2>
-
-                    </section>
-
-					<section data-background="images/derek.jpeg">
-						<h2>Meet Derek</h2>
-					</section>
-
-                    <section>
-                        <h2>DevOps on Bluemix </h2>
-                        <p class="fragment">Create pipelines quickly</p>
-                        <p class="fragment">Easily push code to Bluemix</p>
-                        <p class="fragment">Integration with GitHub, Slack and Saucelabs</p>
-                    </section>
-
-                    <section data-background="images/devops-pipeline.png">
-                    </section>
-
-                    <section>
-                        <h2>DevOps Philosophy</h2>
-                        <p>Failed Build over night</p>
-                        <p>Devs are competitive!</p>
-                        <img src="images/devops-missile.jpg" height="250px">
-                    </section>
-                    <section data-background="images/po-cowboy.png">
-                    </section>
-                    <section>
-                        <h2>Monitoring</h2>
-                        <p>Philips Hue Bulbs</p>
-                        <div class="image-row">
-                            <div style="float: left">
-                                <img src="images/monitoring-tizzle.png" width="300px">
-                            </div>
-                            <div style="float: left">
-                                <img src="images/monitoring-prod.png" width="300px">
-                            </div>
-                        </div>
-                        <div class="image-row">
-                            <div style="float: left">
-                                <img src="images/monitoring-castrol.jpg" height="250px">
-                            </div>
-                        </div>
-
-                    </section>
-                    <section data-background-video="video/kennyLogginsLong.mp4" data-autoslide="35500" >
-
-                    </section>
-                    <section>
-                        <h2>Monitoring</h2>
-                        <img src="images/monitoring-slack.png"  height="575px">
-                    </section>
-                </section>
-
-                <!-- Demo Stack -->
-				<section>
-                    <section>
-                        <h2>Demo</h2>
-                        <p>This presentation is running on this laptop</p>
-                        <p>It's Reveal.js and Node</p>
-                    </section>
-
-                    <section>
-                        <p>We're going to create an app on Bluemix and</p>
-                        <p>create a DevOps pipeline to <b>build</b>, <b>test</b> </p>
-                        <p>and <b>deploy</b> this app</p>
-                    </section>
-                    <section>
-                        <p>All of this will happen when any developer pushes</p>
-                        <p>to the <b>master</b> branch</p>
-                    </section>
-				</section>
 
                 <!-- Success Story -->
 				<section>

@@ -5,6 +5,10 @@
  *
  * Copyright (C) 2016 Hakim El Hattab, http://hakim.se
  */
+.top {
+  position: absolute;
+  z-index: 1; }
+
 /*********************************************
  * RESET STYLES
  *********************************************/

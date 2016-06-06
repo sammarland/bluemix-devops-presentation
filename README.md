@@ -20,4 +20,25 @@ It's written in Reveal.js and can be run by using
     `npm install`     
     `npm run-script test-ci`    
 
-    Enable test reporting and set the file pattern to `test/TEST-*.xml`    
+    Enable test reporting and set the file pattern to `test/TEST-*.xml`
+
+
+## To run this app on Travis CI and Heroku
+
+Travis CI is now linked to the Github repository. The following travis file will build and test the app and deploy it to Heroku for us. to use
+this, you need to change the app/repo/branch variables to match your forked repository.
+
+````
+language: node_js
+node_js:
+- 4.1.1
+deploy:
+  provider: heroku
+  api_key:
+    secure: APIKEY
+  app: derek-doxlon
+  on:
+    repo: sammarland/bluemix-devops-presentation
+    branch: doxlon
+
+````
