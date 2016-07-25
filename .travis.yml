@@ -2,12 +2,10 @@ language: node_js
 node_js:
 - 4.1.1
 deploy:
-  edge: true
-  provider: cloudfoundry
-  username: sam@uk.ibm.com
-  password:
-    secure: gK4zFcFIyRWmQSqxjxAIvuoBrxIzRGsIFRXIEux3hvWBN/IKCJ0ZYVF5fIFI6wl1gB4vjpZf+IFcUFWHReIQ/dWBQg86xvKcTP57Y5Eo9vEyFaUBEi5bVLREcITJx/LW51u1dV2PG9WJfYffXinnRPTYhEWWnfPjY/iizit0aktYtIlA0BZaXRYXT7PkT6l6p0XQm3zJNQPLytfB/acEI9/XKeBzivfa5rcNG1W41QevSpI4xR8p/LULY8EK7mqkOCCEuJV/mUnh54NSK5gpdmJyCmECC4bCmDH+pS9LRqDS1Df8t1UbO0/f7+EZlT2Vj0A9uk/b0dWvV56FMClnaihc5F5X/euolrWBfScFCKc7mSM1iV/GTeQsOC84qbLB/B9YPmJbPmbCc6+FAyYzAFMe14fo/G16aR3ikV4fkTMZJuiK9pygY3gF2YNlYb3OKiq/wCnI2BXGgx/tbV0A+UcHLm5AkNYbf6WzNW8KapB5tVMATPOffXNi0bKUmSUt8kHUZfzFIfLkaKzTwmJdDfPIkK/biQTtjve43rq/lVP4dE1D6Zy34HZwJ4MHUwtN8WAABGwMUw9Labxczs68Xo5jABk4f51IH9prixE6h3+ceQwSlcsHtQiSSalivUjI6xejWFid0WH+7XPMQ1BoIMI+zkSRnNZnfEiKp6K7nB0=
-  api: https://api.w3ibm.bluemix.net
-  organization: DBDedicated
-  space: dev
-  app: devops-technical-workshop
+  provider: heroku
+  api_key:
+    secure: WAcYzMpbCR0J4pxdwy6VmlW95YgVbTYj6ywGkNYKiKHUc19jFkmTIe38JVZLXd7i701gYc79PMJI/12ZW2PsfRV2TGS8Ovi/WZljTw0DmqYbRTQKS7bTfS3xgsDmGigh/flcLwBDJ9I9KZgwCgFhhj/00LZbPMiJwCQdMmABfJR7ozodE0U+5XCruV1n4fwK5DBtWynRtdPsf47wYh/02wbnmDxn9SzB2v9Gx3+RSsvrNYPKn9pedzTDegv7QFaD8zIOy+es4XT3ga2BtmhYHhLAWgYrhw7MVFNTlgTcq6qik7p/DsHUtH+DKOBMxFu39zz37Q43KHofdWwy7X+sMnct5AQGjt+nhvIUSRCBX3k03zQW8LAZNlhW0I2KnVMrfgSrh0W5HoZ//lKizv1McQn7Ey1AmEXlAnP/M5FPO1aJ0NCENWAcSzER+U5uo+k2KL6PKJaBPLzhB93ParRs7Uk2TjVvAIt6h+DMpdf/zoENa8T3h23oEqdiH9/pBjWEISQoHgE8BcyrUALoVhDuXKKQ1EHqSL97vq0seuchGlSHo/c34liktCnzPkmb9WfP6uiKe8cfjMKy8SNfh6VnRU3DQQWUQsYsUvwLENVDyYDiDx4kJ9LuqkU/lhvN+gVbfG+XkfWC6dcaJvcyP3xBgD6+hz+g6CmALXa6szbcj/g=
+  app: derek-doxlon
+  on:
+    repo: sammarland/bluemix-devops-presentation
+    branch: doxlon
